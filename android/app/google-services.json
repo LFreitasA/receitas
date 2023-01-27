@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "899538874167",
+    "firebase_url": "https://receitas-da-vovozinha-89a13-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "receitas-da-vovozinha-89a13",
+    "storage_bucket": "receitas-da-vovozinha-89a13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899538874167:android:e193d07cf812d548b874b2",
+        "android_client_info": {
+          "package_name": "com.example.receitasdavovozinha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899538874167-incpco006r5j407dkage6eabgdor9l8m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.receitasdavovozinha",
+            "certificate_hash": "82e38f7af0072f85301e9250337189d0fb1e5bf1"
+          }
+        },
+        {
+          "client_id": "899538874167-j0uch538q746pus5druch7lng1jdgme3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbC_cPIoSoUshyVKuDGKrbdeKbj3AdpCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899538874167-j0uch538q746pus5druch7lng1jdgme3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "899538874167-n4qpt6i173sh7a3babv7bdjjp2v4hbdh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.receitasdavovozinha"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
