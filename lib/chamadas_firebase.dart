@@ -25,3 +25,9 @@ Future getVersion() async {
   print(data.value);
   return data.value;
 }
+
+Future getIngredientes() async {
+  final data = await FirebaseDatabase.instance.ref("/app/Ingredientes").get();
+  print(data.value);
+  return data.value;
+}

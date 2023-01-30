@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../chamadas_firebase.dart';
+import 'home_page.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -78,20 +79,24 @@ class _HomeState extends State<Home> {
             ),
           );
         }
-        return Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(user.email.toString()),
-              ElevatedButton(
-                  onPressed: () {
-                    realizarLogout();
-                  },
-                  child: Text("Sair"))
-            ],
-          ),
-        );
+        return HomeLogada(); //logadoNaAplicacao(user);
       },
+    );
+  }
+
+  Center logadoNaAplicacao(User user) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(user.email.toString()),
+          ElevatedButton(
+              onPressed: () {
+                realizarLogout();
+              },
+              child: Text("Sair"))
+        ],
+      ),
     );
   }
 }

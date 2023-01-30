@@ -1,12 +1,27 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
+import '../chamadas_firebase.dart';
 import 'ingredientes.dart';
 
-class HomeLogada extends StatelessWidget {
+class HomeLogada extends StatefulWidget {
   const HomeLogada({Key? key}) : super(key: key);
+
+  @override
+  State<HomeLogada> createState() => _HomeLogadaState();
+}
+
+class _HomeLogadaState extends State<HomeLogada> {
+  @override
+  void initState() {
+    buscarDados();
+    super.initState();
+  }
+
+  void buscarDados() async {
+    Map ingredientes = await getIngredientes();
+    print("ingredientes[0");
+    print(ingredientes[0]);
+  }
 
   @override
   Widget build(BuildContext context) {
